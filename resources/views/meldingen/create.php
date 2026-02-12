@@ -22,14 +22,14 @@
             </div>
             <div class="form-group">
                 <label for="type">Type</label>
-                <!-- <select name="type" id="type">
+                <select name="type" id="type">
                     <option value="achtbaan">Achtbaan</option>
                     <option value="draaindeAttractie">Draaiende Attractie</option>
                     <option value="kinderAttractie">Kinderattractie</option>
                     <option value="eetGelegenheid">Restaurant, cafe, etc</option>
                     <option value="waterattractie">Waterattractie</option>
                     <option value="overig">Overig</option>
-                </select> -->
+                </select>
             </div>
             <div class="form-group">
                 <label for="capaciteit">Capaciteit p/uur:</label>
