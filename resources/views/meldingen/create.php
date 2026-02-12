@@ -23,6 +23,7 @@
             <div class="form-group">
                 <label for="type">Type</label>
                 <select name="type" id="type">
+                    <option value="">-kies een type-</option>
                     <option value="achtbaan">Achtbaan</option>
                     <option value="draaindeAttractie">Draaiende Attractie</option>
                     <option value="kinderAttractie">Kinderattractie</option>
