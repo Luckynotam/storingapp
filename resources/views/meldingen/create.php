@@ -25,10 +25,11 @@
                 <select name="type" id="type">
                     <option value="">-kies een type-</option>
                     <option value="achtbaan">Achtbaan</option>
-                    <option value="draaindeAttractie">Draaiende Attractie</option>
-                    <option value="kinderAttractie">Kinderattractie</option>
-                    <option value="eetGelegenheid">Restaurant, cafe, etc</option>
-                    <option value="waterattractie">Waterattractie</option>
+                    <option value="draaiend">Draaiende Attractie</option>
+                    <option value="kinder">Kinderattractie</option>
+                    <option value="horeca">Restaurant, cafe, etc</option>
+                    <option value="show">Show</option>
+                    <option value="water">Waterattractie</option>
                     <option value="overig">Overig</option>
                 </select>
             </div>
