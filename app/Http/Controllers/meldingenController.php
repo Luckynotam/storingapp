@@ -13,7 +13,7 @@ if(isset($_POST['prioriteit'])) {
 else {
     $prioriteit = 0;
 }
-echo $attractie . " / " . $capaciteit . " / " . $melder;
+echo $attractie . " / " . $type." / ". $capaciteit . " / " . $prioriteit. " / ". $melder. " / ". $overig;
 
 //1. Verbinding
 require_once '../../../config/conn.php';
