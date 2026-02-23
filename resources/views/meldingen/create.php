@@ -39,7 +39,7 @@
             </div>
             <div class="form-group">
                 <label for="prio">Prioriteit? </label>
-                <input type="checkbox" name="prio" id="prio">
+                <input type="checkbox" name="prioriteit" id="prio">
 
             </div>
             <div class="form-group">
