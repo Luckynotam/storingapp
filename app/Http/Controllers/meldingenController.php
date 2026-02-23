@@ -8,10 +8,10 @@ $prioriteit = $_POST['prioriteit'];
 $melder = $_POST['melder'];
 $overig = $_POST['overig'];
 if(isset($_POST['prioriteit'])) {
-    $prioriteit = true;
+    $prioriteit = 1;
 }
 else {
-    $prioriteit = false;
+    $prioriteit = 0;
 }
 echo $attractie . " / " . $capaciteit . " / " . $melder;
 
