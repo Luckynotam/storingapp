@@ -29,7 +29,7 @@ $statement->execute([
     ":attractie"=>$attractie,
     ":type"=>$type,
     ":capaciteit"=>$capaciteit,
-    ":prioriteit"=>$prioriteit
+    ":prioriteit"=>$prioriteit,
     ":melder"=>$melder,
     ":overig"=>$overig,
 ]);
