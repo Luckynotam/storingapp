@@ -38,10 +38,16 @@
                 <input type="number" min="0" name="capaciteit" id="capaciteit" class="form-input">
             </div>
             <div class="form-group">
+                <label for="prio">Prioriteit? </label>
+                <input type="checkbox" name="prio" id="prio">
+
+            </div>
+            <div class="form-group">
                 <label for="melder">Naam melder:</label>
                 <input type="text" name="melder" id="melder" class="form-input">
             </div>
             <div class="form-group">
+                <label for="overig">Overige Informatie: </label>
                 <textarea name="overig" id="overig" class="form-input" rows="4"></textarea>
             </div>
             
