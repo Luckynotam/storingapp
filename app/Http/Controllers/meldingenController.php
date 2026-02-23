@@ -2,8 +2,11 @@
 
 //Variabelen vullen
 $attractie = $_POST['attractie'];
+$type = $_POST['type'];
 $capaciteit = $_POST['capaciteit'];
+$prioriteit = $_POST['prioriteit'];
 $melder = $_POST['melder'];
+$overig = $_POST['overig'];
 
 echo $attractie . " / " . $capaciteit . " / " . $melder;
 
