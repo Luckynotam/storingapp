@@ -7,7 +7,12 @@ $capaciteit = $_POST['capaciteit'];
 $prioriteit = $_POST['prioriteit'];
 $melder = $_POST['melder'];
 $overig = $_POST['overig'];
-
+if(isset($_POST['prioriteit'])) {
+    $prioriteit = true;
+}
+else {
+    $prioriteit = false;
+}
 echo $attractie . " / " . $capaciteit . " / " . $melder;
 
 //1. Verbinding
