@@ -32,14 +32,18 @@
             <tr>
                 <th>Attractie</th>
                 <th>Type</th>
+                <th>Capciteit</th>
                 <th>Melder</th>
+                <th>Gemeld op</th>
                 <th>Overige info </th>
             </tr>
             <?php foreach ($meldingen as $melding): ?>
             <tr>
                 <td><?php echo $melding['attractie']?></td>
                 <td><?php echo $melding['type']?></td>
+                <td><?php echo $melding['capaciteit']?></td>
                 <td><?php echo $melding['melder']?></td>
+                <td><?php echo $melding['gemeld_op']?></td>
                 <td><?php echo $melding['overige_info']?></td>
             </tr>
             <?php endforeach; ?>
