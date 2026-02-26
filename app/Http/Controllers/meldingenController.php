@@ -34,4 +34,4 @@ $statement->execute([
     ":overig"=>$overig,
 ]);
 
-header("Location: ../../../index.php?msg=Melding Opgeslagen");
+header("Location: ../../../resources/views/meldingen/index.php?msg=Melding Opgeslagen");
