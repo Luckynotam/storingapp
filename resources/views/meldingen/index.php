@@ -26,7 +26,7 @@
         $query = "SELECT * FROM meldingen"; // Query maken
         $statement = $conn ->prepare($query); // Query voorbereiden
         $statement ->execute(); //Query uitoveren
-        $meldingen = $statement->fetch(PDO::FETCH_ASSOC); //Resultaat ophalen
+        $meldingen = $statement->fetchAll(PDO::FETCH_ASSOC); //Resultaat ophalen
         ?>
         <table>
             <tr>
