@@ -26,7 +26,7 @@
         $query = "SELECT * FROM meldingen"; // Query maken
         $statement = $conn ->prepare($query); // Query voorbereiden
         $statement ->execute(); //Query uitoveren
-        $meldingen = $statement->fetchAll(PDO::FETCH_ASSOC); //Resultaat ophalen
+        $meldingen = $statement->fetch(PDO::FETCH_ASSOC); //Resultaat ophalen
         ?>
         <table>
             <tr>
@@ -45,11 +45,13 @@
                 <td><?php echo $melding['melder']?></td>
                 <td><?php echo $melding['gemeld_op']?></td>
                 <td><?php echo $melding['overige_info']?></td>
+                <td><a href="edit.php">aanpassen</a></td>
             </tr>
+
             <?php endforeach; ?>
         </table>
 
-    
+
     </div>
 
 </body>
