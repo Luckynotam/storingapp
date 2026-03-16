@@ -14,7 +14,7 @@
 
     <div class="container home">
 
-        <form action="">
+        <form action="app/Http/Controllers/loginController.php" method="POST">
             <div class="form-group">
                 <label for="username">Gebruikers naam:</label>
                 <input type="text">
