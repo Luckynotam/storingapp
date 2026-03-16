@@ -18,4 +18,15 @@ $statement->execute([
 ]);
 
 $user = $statement->fetch(PDO::FETCH_ASSOC);
-print_r($user);
+
+if($statement->rowCount() < 1) {
+    die("Error account bestaat niet")
+};
+
+if(!password_verify($password, $user['password'])) {
+    die("Error: Wachtwoord niet juist!")
+}
+
+$_SESSION['user_id'] = $user['id'];
+
+header('Location: index.php');
