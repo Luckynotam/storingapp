@@ -4,7 +4,7 @@ $username = $_POST['username'];
 $password = $_POST['password'];
 
 // Verbinding maken
-require_once '../../../../config/conn.php';
+require_once '../../../config/conn.php';
 
 //2. Query
 $query = "SELECT * FROM meldingen WHERE username = :username";
