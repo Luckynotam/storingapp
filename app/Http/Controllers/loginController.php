@@ -7,7 +7,7 @@ $password = $_POST['password'];
 require_once '../../../config/conn.php';
 
 //2. Query
-$query = "SELECT * FROM meldingen WHERE username = :username";
+$query = "SELECT * FROM user WHERE username = :username";
 
 //3. Van query naar statement
 $statement = $conn->prepare($query);
