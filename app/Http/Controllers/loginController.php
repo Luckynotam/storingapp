@@ -17,5 +17,5 @@ $statement->execute([
     ":username" => $username,
 ]);
 
-$user = $statement fetch(PDO::FETCH_ASSOC);
+$user = $statement->fetch(PDO::FETCH_ASSOC);
 print_r($user);
