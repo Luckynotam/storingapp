@@ -1,15 +1,19 @@
+
 <!doctype html>
 <html lang="nl">
 
 <head>
     <title>StoringApp / Meldingen / Aanpassen</title>
-    <?php require_once '../components/head.php'; 
-    session_start();
-    if(!isset($_SESSION['user_id'])){
-    $msg = "Je moet eerst inloggen!";
-    header("Location: ../login.php?msg=$msg");
-    exit;
-}?>
+    <?php 
+        require_once '../components/head.php';
+        require_once '../components/header.php';
+
+        if(!isset($_SESSION['user_id'])){
+        $msg = "Je moet eerst inloggen!";
+        header("Location: http://localhost/storingapp/storingapp/login.php?msg=$msg");
+        exit;
+        }
+    ?>
 </head>
 
 <body>
@@ -21,8 +25,7 @@
 
     }
     ?>
-    <?php
-        require_once '../components/header.php'; ?>
+    
 
     <div class="container">
         <h1>Melding aanpassen</h1>

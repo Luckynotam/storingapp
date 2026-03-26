@@ -14,6 +14,21 @@
 
     <div class="container home">
 
+    <?php
+    if(isset($_GET['msg']))
+    {
+    echo "<div class='msg'>" . $_GET['msg'] . "</div>";
+    }
+    ?>
+    <?php
+    if(isset($_SESSION['user_id'])){
+    $msg = "Je bent al ingelogd!";
+    header("Location: http://localhost/storingapp/storingapp/resources/views/meldingen/index.php?msg=$msg");
+    exit;
+    }?>
+    
+    
+
         <form action="app/Http/Controllers/loginController.php" method="POST">
             <div class="form-group">
                 <label for="username">Gebruikers naam:</label>

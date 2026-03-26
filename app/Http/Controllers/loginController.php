@@ -20,12 +20,12 @@ $statement->execute([
 $user = $statement->fetch(PDO::FETCH_ASSOC);
 
 if($statement->rowCount() < 1) {
-    die("Error account bestaat niet")
+    die("Error account bestaat niet");
 };
 
-if(!password_verify($password, $user['password'])) {
-    die("Error: Wachtwoord niet juist!")
-}
+if(password_verify($password, $user['password'])) {
+    die("Error: Wachtwoord niet juist!");
+};
 
 $_SESSION['user_id'] = $user['id'];
 
